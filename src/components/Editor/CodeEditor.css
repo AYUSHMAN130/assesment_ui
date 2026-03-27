@@ -1,0 +1,73 @@
+/* Container for the entire assessment page */
+.assessment-container {
+  display: flex;
+  height: 100vh;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Left side: Problem Description */
+.problem-pane {
+  flex: 1;
+  padding: 20px;
+  border-right: 2px solid #333;
+  overflow-y: auto;
+  background-color: #252526;
+}
+
+/* Right side: Editor and Console */
+.editor-pane {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Toolbar above the editor */
+.editor-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2d2d30;
+  border-bottom: 1px solid #333;
+}
+
+.language-select {
+  padding: 5px 10px;
+  background-color: #3c3c3c;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 4px;
+  outline: none;
+}
+
+.run-btn {
+  padding: 8px 20px;
+  background-color: #0e639c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.run-btn:hover {
+  background-color: #1177bb;
+}
+
+/* Console at the bottom */
+.console-pane {
+  height: 200px;
+  background-color: #1e1e1e;
+  border-top: 2px solid #333;
+  padding: 10px 20px;
+  overflow-y: auto;
+}
+
+.console-output {
+  font-family: 'Courier New', Courier, monospace;
+  color: #4af626; /* Hacker green */
+  white-space: pre-wrap;
+}
